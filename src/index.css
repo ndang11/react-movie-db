@@ -6,21 +6,5 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    background-image: url('/public/images/background\ image.png');
 }
 
-.navbar {
-    display: flex;
-    
-}
-
-.nav ul {
-    display: flex;
-    align-items: center;
-}
-
-ul li {
-    list-style: none;
-    margin-left: 10px;
-}
