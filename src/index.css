@@ -1,10 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: #000000;
-    min-height: 100px;
+    margin: 25px;
 }
 
 .header {
     display: flex;
+    margin-top: 25px;
 }
 
+.navbar {
+    display: flex;
+    
+}
+
+.navbar img {
+    height: 30px;
+    margin-right: 80px;
+}
+
+ul li {
+    list-style: none;   
+}
+
+ul {
+    display: flex;
+    gap: 3rem;
+    margin-right: 28rem;
+    text-decoration: none;
+}
+
+.seacrh {
+    display: flex;
+    margin-left: 20px;
+}
+
+.sub {
+    justify-items: center;
+    margin-top: 10rem;
+    gap: 32px;
+}
+
+.title p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.title img {
+    height: 135pxpx;
+    width: 350px;
+    top: 230px;
+    left: 460px;
+}
