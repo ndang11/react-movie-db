@@ -5,45 +5,77 @@
 
 body {
     background-color: #000000;
-    margin: 25px;
+
 }
 
 .header {
     display: flex;
-    margin-top: 25px;
+    margin-top: 20px;
+
+    img {
+        width: 100px;
+        height: 30px;
+    }
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('public/images/background image.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    img {
+        height: 40px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 .navbar {
     display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+ul li a {
     color: white;
-}
-
-.navbar img {
-    height: 30px;
-    margin-right: 80px;
-}
-
-ul li {
-    list-style: none;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
 }
 
 ul {
     display: flex;
-    gap: 3rem;
-    margin-right: 28rem;
-    text-decoration: none;
-    
+    margin-right: 300px;
+    gap: 4rem;
 }
 
-.seacrh {
+.search {
     display: flex;
     margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+     img {
+        height: 50px;
+        width: 60px;
+        margin-right: 20px;
+     }
 }
 
 .search-bar {
     background: transparent;
     border-radius: 10px;
-    border: white;
+    height: 25px;
+    border: none;
 }
 
 .sub {
@@ -53,20 +85,23 @@ ul {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    justify-items: center;
-    color: white;
+    margin-top: -450px;
 }
 
 .title {
     display: flex;
     flex-direction: column;
-    margin-top: -100vh;
+    align-items: center;
 }
 
 .title span {
     margin-left: 50px;
     letter-spacing: 2px;
+    color: white;
 }
 
 .title p {
@@ -97,7 +132,6 @@ ul {
     padding: 6px 16px;
     background-color: black;
     margin: 5px;
-    text-decoration: none;
 
     img {
         margin-top: 2px;
@@ -108,9 +142,25 @@ ul {
 .button {
     display: flex;
     gap: 5rem;
-   
+
 }
 
+.display {
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    display: flex;
+   justify-content: space-between;
+    gap: 10rem;
+    margin-right: 50%;
+}
 
+.display-sec1 {
+    display: flex;
 
-
+    img {
+        height: 30px;
+        width: 60px;
+        margin-right: -25px;
+    }
+}

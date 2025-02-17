@@ -3,26 +3,27 @@ export const Header = () => {
     return (
         <div>
             <div className="header">
-                <div className="navbar">
+                <div className="header-container">
                     <img src='/images/Frame 31 1.png' alt='logo' />
-                    <div className="nav">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Movies</a></li>
-                            <li><a href="">Series</a></li>
-                            <li><a href="">Trending</a></li>
-                            <li><a href="">Categories</a></li>
-                        </ul>
-                    </div>
-                    <div className="seacrh">
-                        <input type='text' className="" placeholder='Search Movies, Series...' />
-                        <img src="/images/profile pic.png" alt="" />
+                    <div className="navbar">
+                        <div className="nav">
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Movies</a></li>
+                                <li><a href="">Series</a></li>
+                                <li><a href="">Trending</a></li>
+                                <li><a href="">Categories</a></li>
+                            </ul>
+                        </div>
+                        <div className="search">
+                            <input type='text' className="search-bar" placeholder='Search Movies, Series...' />
+                            <img src="/images/profile pic.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
             <section className="sub">
                 <div className="container">
-                    <img src='/images/background image.png' alt="" />
                     <div className="title">
                         <img src='/images/Spiderman.png' alt="" />
                         <span>
@@ -48,6 +49,31 @@ export const Header = () => {
                                 More Info
                             </button>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div className="display">
+                    <h3></h3>
+                    <div className="display-sec1">
+                        <h1>1</h1>
+                        <img src="/images/Frame 31 1.png" alt=""/>
+                    </div>
+                    <div className="display-sec2">
+                        <h1>2</h1>
+                        <img src="" alt=""/>
+                    </div>
+                    <div className="display-sec3">
+                        <h1>3</h1>
+                        <img src="" alt=""/>
+                    </div>
+                    <div className="display-sec4">
+                        <h1>4</h1>
+                        <img src="" alt=""/>
+                    </div>
+                    <div className="display-sec5">
+                        <h1>5</h1>
+                        <img src="" alt=""/>
                     </div>
                 </div>
             </section>
