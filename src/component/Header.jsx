@@ -51,10 +51,8 @@ export const Header = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
                 <div className="display">
-                    <h3></h3>
+                <h3></h3>
                     <div className="display-sec1">
                         <h1>1</h1>
                         <img src="/images/Frame 31 1.png" alt=""/>
