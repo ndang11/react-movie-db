@@ -51,29 +51,6 @@ export const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="display">
-                <h3></h3>
-                    <div className="display-sec1">
-                        <h1>1</h1>
-                        <img src="/images/Frame 31 1.png" alt=""/>
-                    </div>
-                    <div className="display-sec2">
-                        <h1>2</h1>
-                        <img src="" alt=""/>
-                    </div>
-                    <div className="display-sec3">
-                        <h1>3</h1>
-                        <img src="" alt=""/>
-                    </div>
-                    <div className="display-sec4">
-                        <h1>4</h1>
-                        <img src="" alt=""/>
-                    </div>
-                    <div className="display-sec5">
-                        <h1>5</h1>
-                        <img src="" alt=""/>
-                    </div>
-                </div>
             </section>
         </div>
     )

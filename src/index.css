@@ -26,6 +26,7 @@ body {
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 
     img {
         height: 40px;
@@ -155,12 +156,11 @@ ul {
     margin-right: 50%;
 }
 
-.display-sec1 {
-    display: flex;
+.footer {
+    color: white;
+}
 
-    img {
-        height: 30px;
-        width: 60px;
-        margin-right: -25px;
-    }
+.end-sec {
+   display: flex;
+   width: 100%;
 }
