@@ -38,7 +38,7 @@ ul li a {
 
 ul {
     display: flex;
-    margin-right: 300px;
+    margin-right: 200px;
     gap: 4rem;
 }
 
@@ -59,7 +59,7 @@ ul {
     background: transparent;
     border-radius: 10px;
     height: 25px;
-    border-color: rgb(252, 239, 239);
+    border: none;
 }
 
 .sub {
@@ -163,7 +163,6 @@ p {
 .detail-2 {
     display: flex;
     flex-direction: column;
-    margin-bottom: ;
 
     h4 {
         margin-bottom: 8px;
@@ -223,4 +222,48 @@ p {
 .last-sec2 {
     display: flex;
     gap: 3rem;
+}
+
+/* movie styling section */
+
+.main-list {
+    span {
+        color: #fff;
+    }
+}
+
+.main-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+    color: white;
+}
+
+.movie-list {
+  position: absolute;
+  display: flex;
+    img {
+        height: 250px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -250px;
+    }
+}
+
+.movie {
+    gap: 3rem;
+}
+
+.movie p {
+    font-size: 20rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.popular-movie {
+    display: flex;
 }
