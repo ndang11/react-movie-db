@@ -41,7 +41,7 @@ export const Footer = () => {
                 <hr></hr>
                 <div className="last-sec">
                     <div className="last-sec2">
-                        <small><img width="16" height="16" src="https://img.icons8.com/small/16/copyright.png" alt="copyright" />2023 STREAM X. All Rights Reserve</small>
+                        <small>© 2023 STREAM X. All Rights Reserved.</small>
                         <small>Terms Of Us</small>
                         <small>Privacy Policy</small>
                         <small>FAQ</small>
