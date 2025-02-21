@@ -1,7 +1,7 @@
 import { useFetchMovies } from '../hooks/useFetch'
 
 export default function Popular() {
-    const url = 'https://api.themoviedb.org/3/movie/popular?api_key=17725e2bc6fdf0fc90364efc161372e2&page=2'
+    const url = 'https://api.themoviedb.org/3/movie/popular?api_key=17725e2bc6fdf0fc90364efc161372e2&page=8'
 
     const { movies } = useFetchMovies(url)
 

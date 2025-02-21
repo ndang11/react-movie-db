@@ -1,5 +1,5 @@
 
-export const Header = () => {
+ const Header = () => {
     return (
         <div>
             <div className="header-container">
@@ -63,3 +63,4 @@ export const Header = () => {
         </div>
     )
 }
+export default Header

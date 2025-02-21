@@ -78,7 +78,7 @@ ul {
 
 .list {
     display: flex;
-    gap: 1px;
+    gap: 10px;
     margin-left: 10px;
 }
 
@@ -111,6 +111,8 @@ p {
     background-color: white;
     margin: 5px;
     display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .main-btn2 {
@@ -121,6 +123,8 @@ p {
     margin: 5px;
     display: flex;
     color: white;
+    align-items: center;
+    gap: 5px;
 }
 
 .button {
@@ -173,6 +177,7 @@ p {
 .detail-3 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .detail-3 span {
