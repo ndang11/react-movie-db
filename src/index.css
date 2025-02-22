@@ -10,7 +10,6 @@ body {
 .header-container {
     display: flex;
     padding: 20px;
-    background-image: url('public/images/background image.png');
     height: 130vh;
     width: 100vw;
     background-size: cover;
@@ -60,6 +59,7 @@ ul {
     border-radius: 10px;
     height: 25px;
     border: none;
+    color: #fff;
 }
 
 .sub {
@@ -74,6 +74,7 @@ ul {
     align-items: center;
     position: absolute;
     margin-top: -670px;
+    background-image: url('public/images/background image.png');
 }
 
 .list {
@@ -256,7 +257,7 @@ p {
     gap: 5rem;
     scrollbar-width: none;
     margin-left: 40px;
-    
+
 }
 
 .movie {
@@ -277,7 +278,7 @@ p {
         bottom: 20px;
         border-radius: 10px;
     }
-   
+
 }
 
 .popular-movie {

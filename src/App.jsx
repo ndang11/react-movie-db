@@ -1,15 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Home from './pages/Home'; 
-import Detail from './pages/movieDetailPage';
+import NavBar from './component/NavBar.jsx';
+import ContextData from './context/Context.jsx';
+// import SearchBar from './component/SearchBar.jsx';
+import MovieDetailPage from './pages/movieDetailPage.jsx';
 
 function App() {
   return (
-    <Router>
+    <ContextData>
+      <Router>
+        <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Detail/>} />
+        {/* <Route path='/search' element={<SearchBar/>}/> */}
+        <Route path="/movie/:movieId" element={<MovieDetailPage />} />
       </Routes>
     </Router>
+    </ContextData>
   );
 }
  export default App

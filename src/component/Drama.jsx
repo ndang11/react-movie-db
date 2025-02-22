@@ -1,6 +1,7 @@
 import { useFetchMovies } from '../hooks/useFetch'
+import PropTypes from 'prop-types'
 
-export default function Drama() {
+export default function Drama({ redirectTo}) {
     const url = 'https://api.themoviedb.org/3/discover/movie?api_key=17725e2bc6fdf0fc90364efc161372e2&with_genres=18&page=7'
 
     const { movies } = useFetchMovies(url)
@@ -18,11 +19,16 @@ export default function Drama() {
                 <div className="action-movie">
                     {movies.map((movie) => (
                         <div className='movie-pop1' key={movie.id}>
-                            <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
+                            <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title}
+                            onClick={() => redirectTo(movie)} />
                         </div>
                     ))}
                 </div>
             </div>
         </>
     )
+}
+
+Drama.propTypes = {
+    redirectTo: PropTypes.func
 }

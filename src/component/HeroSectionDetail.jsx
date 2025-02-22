@@ -1,11 +1,11 @@
 
-const Header = () => {
-    return (
-        <div>
-            <section className="sub">
-                <div className="container">
+
+export const HeroSectionDetail = () => {
+  return (
+    <div>
+          <div className="container">
                     <div className="title">
-                        <img src='/images/Spiderman.png' alt="" />
+                        <img src='' alt="" />
                         <div className="list">
                             <div className="rank">
                                 CBFC:U/A
@@ -17,9 +17,7 @@ const Header = () => {
                             </span>
                         </div>
                     </div>
-                    <p>When a spell goes wrong, dangerous foes from other<br>
-                    </br> worlds start to appear, forcing Peter to discover what it<br>
-                        </br> truly means to be Spider-Man.</p>
+                    <p></p>
                     <div className="button">
                         <button className="main-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.99999 19.9902C11.366 19.9902 12.652 19.7289 13.8578 19.2062C15.0637 18.6836 16.1274 17.9618 17.049 17.0406C17.9706 16.1195 18.6928 15.0563 19.2156 13.851C19.7385 12.6458 20 11.3604 20 9.99506C20 8.62971 19.7385 7.34439 19.2156 6.13909C18.6928 4.93381 17.9706 3.8706 17.049 2.94948C16.1274 2.02836 15.0621 1.30649 13.8529 0.78387C12.6438 0.261249 11.3562 -6.10352e-05 9.99018 -6.10352e-05C8.62417 -6.10352e-05 7.33823 0.261249 6.13235 0.78387C4.92646 1.30649 3.86437 2.02836 2.94607 2.94948C2.02778 3.8706 1.30719 4.93381 0.784313 6.13909C0.261438 7.34439 0 8.62971 0 9.99506C0 11.3604 0.261438 12.6458 0.784313 13.851C1.30719 15.0563 2.02941 16.1195 2.95097 17.0406C3.87255 17.9618 4.93627 18.6836 6.14214 19.2062C7.34803 19.7289 8.63398 19.9902 9.99999 19.9902Z" fill="black" fillOpacity="0.85" />
@@ -43,8 +41,6 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-            </section>
-        </div>
-    )
+    </div>
+  )
 }
-export default Header

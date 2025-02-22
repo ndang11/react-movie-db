@@ -1,6 +1,7 @@
 import { useFetchMovies } from '../hooks/useFetch'
+import PropTypes from 'prop-types'
 
-export default function Popular() {
+export default function Popular({ redirectTo }) {
     const url = 'https://api.themoviedb.org/3/movie/popular?api_key=17725e2bc6fdf0fc90364efc161372e2&page=8'
 
     const { movies } = useFetchMovies(url)
@@ -18,11 +19,16 @@ export default function Popular() {
                 <div className="popular-movie">
                     {movies.map((movie) => (
                         <div className='movie-pop' key={movie.id}>
-                            <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
+                            <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title}
+                                onClick={() => redirectTo(movie)} />
                         </div>
                     ))}
                 </div>
             </div>
         </>
     )
+}
+
+Popular.propTypes = {
+    redirectTo: PropTypes.func
 }

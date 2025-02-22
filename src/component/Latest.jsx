@@ -1,7 +1,8 @@
 import { useFetchMovies } from '../hooks/useFetch'
+//import { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 
-
-export default function Latest() {
+export default function Latest({ redirectTo }) {
     const url = 'https://api.themoviedb.org/3/discover/movie?api_key=17725e2bc6fdf0fc90364efc161372e2'
 
     const { movies } = useFetchMovies(url)
@@ -16,13 +17,17 @@ export default function Latest() {
 
                             <div className='movie' key={movie.id}>
                                 <p>{index + 1}</p>
-                                <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
+                                <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title}
+                                    onClick={() => redirectTo(movie)} />
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
-
         </>
     )
+}
+
+Latest.propTypes={
+    redirectTo: PropTypes.func
 }

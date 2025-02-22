@@ -17,3 +17,5 @@ export const fetchMovies = async(url) => {
     console.error('Error fetching data', error)
   }
 }
+
+export default fetchMovies
